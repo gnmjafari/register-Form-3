@@ -1,0 +1,141 @@
+body
+{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: linear-gradient(120deg,rgb(95, 0, 159),rgba(253, 76, 0, 0.714));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.holder
+{
+    background-color: rgb(0, 0, 125);
+    display: flex;
+    flex-direction: row;
+}
+
+img
+{
+    width: 450px;
+    height: 620px;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.inputbox
+{
+    position: relative;
+    margin: 35px 50px 20px 150px;
+}
+
+.inputbox input
+{
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    background-color: rgb(0, 0, 125);
+    color: white;
+    outline: none;
+}
+
+.inputbox span
+{
+    position: absolute;
+    left: 0;
+    background-color: rgb(0, 0, 125);
+    font-size: 16px;
+    padding: 0;
+    pointer-events: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span
+{
+    transform: translateX(-110px);
+    border-radius: 8px;
+    border: 0;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding: 0 5px;
+    color: #ff8e00;
+}
+
+.price{
+    margin: 15px 50px 20px 35px;
+    font-size: 18px;
+}
+
+.price span{
+    margin: 0 25px;
+}
+
+.selectbox{
+    position: relative;
+    margin: 35px 50px 20px 155px;
+}
+
+.selectbox span{
+    position: absolute;
+    left: -100px;
+    font-size: 16px;
+}
+
+#people{
+    background-color: rgb(0, 0, 125);
+    border: 0;
+    color: white;
+   outline: none;
+    font-size: 16px;
+}
+
+#submit{
+    background-image: linear-gradient(120deg,rgba(253, 76, 0, 0.714),rgb(95, 0, 159));
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-left: 148px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#comment
+{
+    height: 100px;
+    width: 100%;
+    resize: none;
+    border: 0;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    background-color:rgb(0, 0, 125) ;
+    outline: none;
+    color: white;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.inputbox textarea:valid ~ span,
+.inputbox textarea:focus ~ span
+{
+    transform: translateX(-110px);
+    border-radius: 8px;
+    border: 0;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding: 0 5px;
+    color: rgb(255, 132, 0);
+}
